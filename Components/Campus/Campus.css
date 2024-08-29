@@ -1,0 +1,28 @@
+.campus {
+    text-align: center;
+}
+.campus .container {
+    width: 75%;
+}
+.campus .container .boxs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.campus .container .boxs .gallery img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+.campus .container .btn {
+    background-color: #212ea0;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 17px;
+    color: white;
+    margin-top: 40px;
+}
+.campus .container .btn i {
+    margin-left: 7px;
+}

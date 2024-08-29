@@ -1,0 +1,33 @@
+.home {
+    height: 100vh;
+    background: linear-gradient(rgba(8,0,58,0.7),rgba(8,0,58,0.7)),
+    url(../../assets//hero.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    place-items: center;
+    color: #fff;
+    text-align: center;
+}
+.home .container {
+    max-width: 800px;
+}
+.home .container h1 {
+    font-size: 60px;
+}
+@media (max-width: 767px) {
+    .home .container h1 {
+        font-size: 40px;
+    }
+}
+.home .container .btn {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 17px;
+    color: black;
+    margin-top: 10px;
+}
+.home .container .btn i {
+    margin-left: 7px;
+}

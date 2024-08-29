@@ -1,0 +1,92 @@
+.testimonials .container {
+    position: relative;
+    padding: 0 80px;
+}
+@media (max-width: 767px) {
+    .testimonials .container {
+        padding: 40px;
+    }
+}
+.testimonials .next-btn, .testimonials .back-btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 15px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #212ea0;
+}
+@media (max-width: 767px) {
+    .testimonials .next-btn, .testimonials .back-btn {
+        width: 35px;
+        padding: 10px;
+    }
+}
+.testimonials .back-btn {
+    left: 0;
+}
+.testimonials .slider {
+    overflow: hidden;
+}
+.testimonials .slider ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    width: 200%;
+    overflow-x: hidden;
+    transition: .5s;
+}
+.testimonials .slider ul li {
+    width: 50%;
+    padding: 10px;
+}
+.testimonials .slide {
+    box-shadow: 0 0 20px rgba(0, 0, 0, .05);
+    padding: 40px;
+    border-radius: 10px;
+    color: #676767;
+    line-height: 1.4;
+}
+@media (max-width: 767px) {
+    .testimonials .slide {
+        padding: 10px;
+    }
+}
+.testimonials .slide  img {
+    width: 65px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 4px solid #212ea0;
+}
+@media (max-width: 767px) {
+    .testimonials .slide  img {
+        width: 50px;
+        border: 3px solid #212ea0;
+    }
+}
+.testimonials .user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+    .testimonials .user-info {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    .testimonials .user-info h3 {
+        font-size: 16px;
+    }
+    .testimonials .user-info p {
+        font-size: 12px;
+    }
+}
+.testimonials .user-info h3 {
+    color: #212ea0;
+    font-size: 18px;
+    font-weight: bold;
+}

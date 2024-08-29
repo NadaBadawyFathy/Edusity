@@ -1,0 +1,49 @@
+.programs {
+    text-align: center;
+}
+.programs .container {
+    width: 75%;
+}
+.programs .container .boxs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.programs .container .boxs .program {
+    max-height: 400px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.programs .container .boxs .program img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+.programs .container .boxs .program .caption {
+    position: absolute;
+    top: 70%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 15, 152, .3);
+    border-radius: 10px;
+    color: #fff;
+    transition: .4s;
+    opacity: 0;
+}
+.programs .container .boxs .program .caption img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+.programs .container .boxs .program:hover > .caption {
+    opacity: 1;
+    top: 0;
+}
